@@ -3,21 +3,22 @@
 
 }
 
-.container:hover .imagenv{
-    -webkit-transform: scale(1.1);transform:scale(1.1);
-    -webkit-transition: all .1s ease-in-out;
+.navbar{
+    background-color: white;
+}
+
+
+.imagenv:hover{
+    
+    transform: scale(1.3); 
 }
 
 .imagenv{
     width: 350px;
     height: 210px;
+    transition: transform .5s ease-in-out;
 }
 
-
-.menu-fixed{
-    background-color: white;
-
-}
 
 h1{
     color:white;
@@ -27,6 +28,7 @@ h1{
 
 .pprincipal{
     text-align: center;
+    align-content: center;
     color: #ffffff;
 }
 
@@ -35,16 +37,15 @@ h1{
 }
 
 .container {
-    overflow:hidden;}
-
-
-.navbar{
-    background-color: white;
+    overflow:hidden;
 }
 
 .nav-link{
     font-size:20px;
+    color: black;
+    font-family: 'Noto Sans TC';
 }
+
 .nav-link:hover{
     color:#9a0506;
 }
@@ -53,10 +54,6 @@ h1{
     color:black;
 }
 
-.nav-link{
-color: black;
-font-family: 'Noto Sans TC'
-}
 
 .btn1{
  background-color:#9a0506;
@@ -64,6 +61,7 @@ font-family: 'Noto Sans TC'
  font-style: inherit;
  text-align: center;
 }
+
 .btn1:link{
     text-decoration: none;
 }
@@ -95,7 +93,7 @@ font-family: 'Noto Sans TC'
     justify-content: center;
 }
 
-.trans4{
+.enviar{
     -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   border-radius: 50px;
@@ -104,8 +102,7 @@ font-family: 'Noto Sans TC'
   font-family: Arial;
   font-size: 16px;
   font-style: blond;
-  height: 40px;
-  width: 120px;
+
 }
 
 .contenido{
@@ -128,7 +125,6 @@ border-bottom-right-radius: 200px 150px;
 }
 
 .div11{
-    margin-left: 50px;
     display: block;
 }
 
@@ -186,7 +182,6 @@ border-bottom-right-radius: 200px 150px;
 
 .funcion{
     color:white;
-    display: inline;
     text-align: justify;
     font-size: 17px;
 }
@@ -215,9 +210,9 @@ border-bottom-right-radius: 200px 150px;
 }
 
 .imagen13{
-    align-content: center;
-    margin-left: 50px;
-    padding: 20px;
+    display: flex;
+   justify-content: center;
+   align-items: center;
 
 }
 .parrafo3{
@@ -311,12 +306,12 @@ hr{
 
 .zoom2{
  
-    transition: transform .2s;Animation 
+    transition: transform .2s;
     margin: 0 auto;
 }
 
 .zoom2:hover {
-    transform: scale(1.1);  (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) 
+    transform: scale(1.1); 
 }
 
 .boton5{
@@ -336,10 +331,6 @@ hr{
     margin-right: 100px;
 }
 
-.col1f{
-    
-    margin-left: 70px;
-}
 
 .titulou{
    
@@ -376,4 +367,40 @@ hr{
     margin-right: auto;
     margin-left: auto;
     width: 100%;
+}
+
+.img11{
+    width: 500px;
+    height: 300px;
+}
+
+.img12{
+    width:500px;
+    height:400px;
+}
+
+.img13{
+    width:500px; 
+    height:250px;
+}
+
+.icono{
+    color: #9a0506;
+}
+
+.arriba {
+    padding:30px;
+    font-size:20px;
+    position: fixed;
+    bottom:20px;
+    right:20px;
+    opacity: .8;
+    cursor: pointer;
+    z-index:1;
+    width: 40px;
+}
+
+.boton6{
+    background-color: #a60506;
+    color: white;
 }
